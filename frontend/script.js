@@ -14,9 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         messageElement.textContent = text;
         chatBox.appendChild(messageElement);
         scrollToBottom();
-    }
-    
-    // Fonction pour gérer l'indicateur "typing"
+    }    // Fonction pour gérer l'indicateur "typing"
     function showTypingIndicator() {
         // S'assurer qu'un seul indicateur est présent
         if (document.querySelector('.typing-indicator')) return;
@@ -34,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
             chatBox.removeChild(typingElement);
         }
     }
-    
+
     function scrollToBottom() {
         chatBox.scrollTop = chatBox.scrollHeight;
     }
@@ -47,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Afficher le message de l'utilisateur
         addMessage(messageText, "user");
         userInput.value = "";
-        
+
         // Afficher l'indicateur "typing"
         showTypingIndicator();
 
@@ -75,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (data.error) {
                 addMessage(`Erreur : ${data.error}`, "bot");
             } else {
-                // Afficher la réponse du bot
+                // Afficher la réponse du bot directement
                 const botResponse = data.response;
                 addMessage(botResponse, "bot");
             }

@@ -17,20 +17,7 @@ The application is divided into two main parts:
 
 1.  **Frontend (Client-Side):** The `index.html`, `style.css`, and `script.js` files create the chat interface you see in your browser. When you send a message, the JavaScript sends a request to our backend API.
 2.  **Backend (Server-Side):** The `main.py` file, running with FastAPI, receives requests from the frontend. It passes your message to the LangChain Agent, which uses the Gemini LLM to reason and utilize its tools. Once an answer is found, the backend sends it back to the frontend to be displayed.
-+----------------+ HTTP Request +-------------------+ (LangChain) +-------------------+
-| Frontend | (User's Question) | Backend | -------------------> | LLM Agent |
-| (Browser) | <------------------- | (FastAPI) | <------------------ | (Google Gemini) |
-+----------------+ JSON Response +-------------------+ (Tool Result) +--------+----------+
-(Agent's Answer) | |
-| |
-+--------v--------+
-| Tools |
-| - Search |
-| - Wikipedia |
-| - Calculator |
-+-----------------+
-code
-Code
+
 ## 3. Features
 
 - **Interactive Chat UI:** A clean and simple web interface for conversation.
@@ -61,12 +48,12 @@ cd agent_guide
 
 Step 2: Create a Python Virtual Environment
 
-# For Windows
+#### For Windows
 ```
 python -m venv venv
 .\venv\Scripts\activate
 ```
-# For macOS/Linux
+#### For macOS/Linux
 ```
 python3 -m venv venv
 source venv/bin/activate
