@@ -98,11 +98,3 @@ You are now ready to chat with your AI agent!
     3. It uses the `fetch()` API to send the message to the backend at `http://127.0.0.1:8000/agent-chat`.
     4. When the backend responds, it hides the typing indicator and displays the bot's message in the chat.
     5. It includes error handling in case the API cannot be reached.
-
-## 6. Future Enhancements
-
-Want to take this project further? Here are some ideas:
-- **Streaming Responses:** Modify the frontend and backend to stream the agent's thought process and final answer token-by-token, making it feel more responsive.
-- **Conversation History:** Update the agent to be "conversational" by passing the chat history along with the new question, allowing it to remember context.
-- **More Tools:** Integrate other tools from LangChain, like a file system tool to read local files or a Python REPL tool to execute code.
-- **User Authentication:** Add a login system to save chat histories for different users.
