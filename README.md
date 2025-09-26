@@ -57,7 +57,7 @@ python -m venv venv
 python3 -m venv venv
 source venv/bin/activate
 Step 3: Install Dependencies
-Create a requirements.txt file (if not already present) and install the packages.
+
 code
 Bash
 pip install -r requirements.txt
