@@ -1,5 +1,3 @@
-# agent.py (Version simplifiée sans format forcé)
-
 import os
 import google.generativeai as genai
 from dotenv import load_dotenv
