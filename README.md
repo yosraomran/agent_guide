@@ -43,10 +43,10 @@ Follow these steps to get the project running on your local machine.
 **Step 1: Clone the Repository**
 (If you have this as a project folder, you can skip this step)
 ```bash
-git clone <repository-url>
+git clone https://github.com/yosraomran/agent_guide.git
 cd agent_guide
 Step 2: Create a Python Virtual Environment
-It's best practice to create a virtual environment to manage project dependencies.
+
 code
 Bash
 # For Windows
